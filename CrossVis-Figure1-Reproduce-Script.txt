@@ -1,0 +1,16 @@
+This script is to accompany our submission of the CAG preprint paper entitled "CrossVis: A Visual Analytics System for Exploring Heterogeneous Multivariate Data with Applications to Materials and Climate Sciences" for Graphics Replicability Stamp Initiative (GRSI) verification. Follow the steps below to reproduce Figure 1 from our paper. This figure exercises most of the novel features of the CrossVis system and it shows a data set that is used as a case study in our paper.
+
+We provide instructions below on downloading and installing a precompiled version of CrossVis for the Mac operating system. A movie is also provided showing download and install using the CrossVis installer.
+
+Because CrossVis is an interactive data analysis tool, we show the steps for running the program, loading data, and configuring the view to match Figure 1 in a movie.
+
+To reproduce Figure 1 from the CAG paper follow the following steps:
+
+1.) Clone this repository containing the this script, the CrossVis paper
+preprint, sample data, and the instructive video. The repository is located at https://github.com/csteed/CrossVISCAGFigureReproduction.git.
+
+2.) Watch the video 'CrossVisInstallProcess.mp4' from this repository to see the steps for downloading and installing the precompiled version of CrossVis from the CrossVis Github repository release section:
+https://github.com/ORNL/CrossVis/releases/download/v2.1.6/CrossVis-2.1.6.pkg
+
+3.) After installing CrossVis, follow the steps shown in the instructive video 'CAGFigure1Reproduce.mp4' to produce a view like
+the one shown in Figure 1 of the paper.
