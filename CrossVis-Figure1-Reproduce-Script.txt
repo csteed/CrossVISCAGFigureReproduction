@@ -12,5 +12,7 @@ preprint, sample data, and the instructive video. The repository is located at h
 2.) Watch the video 'CrossVisInstallProcess.mp4' from this repository to see the steps for downloading and installing the precompiled version of CrossVis from the CrossVis Github repository release section:
 https://github.com/ORNL/CrossVis/releases/download/v2.1.6/CrossVis-2.1.6.pkg
 
+(Note: The main github repository for the CrossVis source code is at https://github.com/ORNL/CrossVis)
+
 3.) After installing CrossVis, follow the steps shown in the instructive video 'CAGFigure1Reproduce.mp4' to produce a view like
 the one shown in Figure 1 of the paper.
