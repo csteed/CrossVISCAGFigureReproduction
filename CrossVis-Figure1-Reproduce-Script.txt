@@ -14,4 +14,20 @@ https://github.com/ORNL/CrossVis/releases/download/v2.1.6/CrossVis-2.1.6.pkg
 
 Manual compilation for CrossVis is not necessary if the precompiled release mentioned above is used. However, if you wish to manually compile CrossVis, follow the instructions in the README.md on the CrossVis Github source code repository: [https://github.com/ORNL/CrossVis](https://github.com/ORNL/CrossVis). Following these instructions, the jar files can be built and CrossVis can be executed using provided scripts.
 
+Verified commands for building CrossVis (combining the steps mentioned above) are listed below:
+
+  brew install maven java (this assumes homebrew is installed on a Mac platform)
+  brew install maven java
+  sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+  git clone --depth 1 https://github.com/ORNL/CrossVis
+  cd CrossVis
+  mvn clean
+  mvn compile
+  mvn package (errors will occur from java packager but these can be ignored)
+  cd scripts
+  cp ../target/crossvis-2.1.6-jar-with-dependencies.jar .
+  curl -o javafx.zip -L https://gluonhq.com/download/javafx-11-0-2-sdk-mac
+unzip javafx.zip
+  java -Xmx6g --module-path javafx-sdk-11.0.2/lib --add-modules javafx.controls -cp ./crossvis-2.1.6-jar-with-dependencies.jar gov.ornl.crossvis.CrossVis
+
 3.) After installing CrossVis, follow the steps shown in the instructive video 'CAGFigure1Reproduce.mp4' to produce a view like the one shown in Figure 1 of the paper.
