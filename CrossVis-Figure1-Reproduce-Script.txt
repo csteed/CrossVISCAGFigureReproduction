@@ -19,7 +19,7 @@ Verified commands for building CrossVis (combining the steps mentioned above) ar
   brew install maven java (this assumes homebrew is installed on a Mac platform)
   brew install maven java
   sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-  git clone --depth 1 https://github.com/ORNL/CrossVis
+  git submodule update --init --depth 1
   cd CrossVis
   mvn clean
   mvn compile
